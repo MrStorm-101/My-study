@@ -1,0 +1,220 @@
+/***********************通用样式-begin*****************/
+body{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+/* 设置字体样式 */
+@font-face{
+    font-family: lk;
+    src: url('fonts/lk.eot') format('embedded-opentype');
+    src: url('fonts/lk.svg') format('svg');
+    src: url('fonts/lk.ttf') format('truetype');
+    src: url('fonts/lk.woff') format('woff');
+}
+
+[class^="icon-"],
+[class*="icon-"]{
+    font-family: lk;
+    font-style: normal;
+}
+/***********************通用样式-end*****************/
+
+/**********************头部-begin********************/
+#lk_header{
+    
+}
+
+/***************上半部分*******************/
+
+#lk_header .top-bar{
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#lk_header .top-bar .container .row>div+div{    
+    /* div+div:选择紧接在 <div> 元素之后的所有 <div> 元素。 */
+    border-left:1px solid #e0e0e0;
+}
+
+#lk_header .top-bar .container .row a{
+    position: relative;
+}
+
+#lk_header .top-bar .container .row a img{
+    position: absolute;
+    left: -20%;
+    top:20px;
+    display: none;
+    transform: translateX(-20%);
+    z-index: 9999;
+}
+
+#lk_header .top-bar .container .row a:hover img{
+    display: block;
+}
+
+.icon-phone::before{
+    content: '\e958';
+    font-size: 13px;
+}
+
+.icon-tel::before{
+    content: '\e942';
+    font-size: 13px;
+}
+
+/*******************导航*****************/
+.navbar-lk{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar .navbar-brand{
+    height: 80px;
+    margin-left: 25px;
+    margin-right: 70px;
+}
+
+.navbar .navbar-brand img{
+    width: 180px;
+}
+
+#lk_header .navbar-lk .navbar-nav>li>a{
+    /* 让其处于中间位置 */
+    height: 70px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#lk_header .navbar-lk .navbar-nav>li>a:hover{
+    border-bottom: 2px solid #8B008B ;
+}
+
+#lk_header .navbar-lk .navbar-toggler{
+    margin-top: 5px;
+}
+
+
+/**********************头部-end********************/
+
+/*******************轮播图-begin********************/
+#lk_carousel{
+   
+}
+
+#lk_carousel .carousel-item{
+    height: 410px;
+}
+
+#lk_carousel .carousel-item img{
+    width: 100%;
+}
+/**********************轮播图-end********************/
+
+/**********************热门课程-begin********************/
+#lk_hot{
+    
+}
+
+/**********************热门课程-end********************/
+
+/**********************产品中心-begin********************/
+
+#lk_product{
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+#lk_product .container .nav-item{
+    font-size: 18px;
+} 
+
+#lk_product .container .nav-item a{
+    color: #000;
+    border:none;
+    padding: 10px;
+}
+
+#lk_product .container .nav-item a.active{
+    background: transparent;
+    color: #6A5ACD ;
+    border-bottom: 2px solid #6A5ACD ;
+}
+
+#lk_product .container .tab-content{
+    margin-top: 20px;
+}
+
+.media_heading{
+    padding: 0;
+    margin: 0 auto;
+}
+
+#lk_product .container .tab-content .medium-info{
+    background:transparent;
+    font-size: 22px;
+} 
+
+#lk_product .container .tab-content .medium-info a{
+    color: #000;
+}
+
+#lk_product .container .tab-content .medium-info a:hover{
+    color: #D87093;
+}
+
+
+
+/**********************产品中心-end********************/
+
+/**********************关于我们-begin********************/
+#lk_about:not(h2){
+    text-indent: 2em;   
+}
+/**********************关于我们-end********************/
+
+/**********************友情链接-begin********************/
+#lk_link{
+   
+}
+
+#lk_link .logo{
+    text-align: center;
+}
+
+#lk_link .logo li{
+    display: inline-block;
+    padding: 25px 30px;
+}
+/**********************友情链接-end********************/
+
+/**********************头部-begin********************/
+#lk_footer{
+   background: url('../img/ft_bg.png') no-repeat;
+   color: white;
+}
+
+#lk_footer .container .row ul li{
+    margin-bottom: 10%;
+}
+
+#lk_footer .container .row ul li a{
+    color: #fff;
+}
+
+#lk_footer .container .row ul li a:hover{
+    color: #00FFCC;
+    transition: linear all .3s;
+}
+/**********************头部-end********************/
